@@ -1,0 +1,6 @@
+# Exclude non-static/backend files from Vercel deployment
+backend/
+.vscode/
+plan.md
+update_nav.py
+README.md

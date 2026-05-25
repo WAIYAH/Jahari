@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jahari Safaris | High-End Maasai Mara Safari House</title>
+    <meta name="description" content="Jahari Safaris is a refined safari house in Maasai Mara, crafting high-end, story-led journeys with elegant stays, curated game drives, and seamless hospitality.">
+    <meta name="keywords" content="Jahari Safaris, Maasai Mara Safari House, High-End Safari Kenya, Luxury Safari Narok, Jahari Experience">
+    <link rel="canonical" href="https://www.jaharisafaris.com/">
+
+    <!-- Open Graph / Social Media -->
+    <meta property="og:title" content="Jahari Safaris | High-End Maasai Mara Safari House">
+    <meta property="og:description" content="Discover Jahari Safaris: a high-end Maasai Mara safari house designed around immersive stories, elegant comfort, and thoughtful adventure.">
+    <meta property="og:image" content="https://www.jaharisafaris.com/assets/images/close-view%20of%20female-lion.jpeg">
+    <meta property="og:url" content="https://www.jaharisafaris.com/">
+    <meta property="og:type" content="website">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Jahari Safaris | High-End Maasai Mara Safari House">
+    <meta name="twitter:description" content="Jahari Safaris creates high-end, story-led Maasai Mara journeys with polished service and timeless safari elegance.">
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "TravelAgency",
+      "name": "Jahari Safaris Wild Route",
+      "image": "https://www.jaharisafaris.com/assets/images/logo.png",
+      "@id": "https://www.jaharisafaris.com/",
+      "url": "https://www.jaharisafaris.com/",
+      "telephone": "+254729991926",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Maasai MARA",
+        "addressLocality": "Narok",
+        "addressRegion": "Narok County",
+        "addressCountry": "KE"
+      },
+      "areaServed": {
+        "@type": "Place",
+        "name": "Maasai Mara, Kenya"
+      },
+      "description": "High-end safari house in Maasai Mara offering story-led journeys, elegant stays, and personalized safari planning."
+    }
+    </script>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@300;400;500;600&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind CSS (via CDN) -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Config -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#00A651',
+                        accent: '#FF6200',
+                        dark: '#1A1A1A',
+                        light: '#FAFAF7',
+                        sand: '#F5E6C8',
+                    },
+                    fontFamily: {
+                        heading: ['"Playfair Display"', 'serif'],
+                        body: ['"Inter"', 'sans-serif'],
+                        accent: ['"Cormorant Garamond"', 'serif'],
+                    },
+                    animation: {
+                        'fade-up': 'fadeUp 0.8s ease-out forwards',
+                        'marquee': 'marquee 30s linear infinite',
+                        'spin-slow': 'spin-slow 15s linear infinite',
+                    },
+                    keyframes: {
+                        fadeUp: {
+                            '0%': {
+                                opacity: '0',
+                                transform: 'translateY(30px)',
+                            },
+                            '100%': {
+                                opacity: '1',
+                                transform: 'translateY(0)',
+                            },
+                        },
+                        marquee: {
+                            '0%': { transform: 'translateX(0%)' },
+                            '100%': { transform: 'translateX(-50%)' },
+                        },
+                        'spin-slow': {
+                            '0%': { transform: 'rotate(0deg)' },
+                            '100%': { transform: 'rotate(360deg)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome for Icons (Temporary via CDN for rapid dev) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body class="bg-light text-dark antialiased">
+
+    <!-- Page Loader -->
+    <div id="page-loader">
+        <div class="text-center">
+            <h2 class="font-heading text-4xl text-primary font-bold mb-2">Jahari Safaris</h2>
+            <p class="font-accent italic text-xl">Wild Route</p>
+        </div>
+    </div>
+
+    <!-- Navbar -->
+    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 py-6 text-white"
+        style="background-color: rgba(26, 26, 26, 0.95);">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex-shrink-0 flex items-center gap-4 hover:opacity-80 transition-opacity">
+                    <div class="h-28 w-28 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center border-2 border-white/40 shadow-lg shadow-black/35">
+                        <img src="assets/images/logo.png" alt="Jahari Safaris Logo" class="h-24 w-24 rounded-full object-cover">
+                    </div>
+                    <span class="font-heading font-bold text-2xl tracking-[0.18em] hidden sm:inline drop-shadow-[0_4px_10px_rgba(0,0,0,0.9)]">JAHARI</span>
+                </a>
+
+                <!-- Desktop Menu -->
+                <nav class="hidden lg:flex space-x-8">
+                    <a href="index.html" class="hover:text-primary transition-colors">Home</a>
+                    <a href="accommodations.html" class="hover:text-primary transition-colors">Lodges &amp; BNBs</a>
+                    <a href="camping.html" class="hover:text-primary transition-colors">Camping</a>
+                    <a href="car-hire.html" class="hover:text-primary transition-colors">Car Hire</a>
+                    <a href="tents.html" class="hover:text-primary transition-colors">Tents</a>
+                    <a href="about.html" class="hover:text-primary transition-colors">About Us</a>
+                </nav>
+
+                <!-- Actions -->
+                <div class="hidden lg:flex items-center space-x-4">
+                    <!-- Currency Toggle -->
+                    
+                    <a href="https://wa.me/254729991926?text=Hello%20Jahari%20Safaris%2C%20I%27d%20like%20to%20book%20a%20safari.%20Please%20share%20availability%20and%20package%20details." target="_blank" rel="noopener noreferrer" class="btn-primary">Book Now</a>
+                </div>
+
+                <!-- Desktop Action spacing -->
+            </div>
+        </div>
+    </header>
+
+    <!-- Hamburger Button (Fixed Top Right) -->
+    <button id="mobile-menu-btn" aria-label="Toggle Mobile Menu"
+        class="lg:hidden fixed top-4 right-4 z-[9999] w-12 h-12 flex items-center justify-center bg-dark/50 backdrop-blur-md rounded-full focus:outline-none touch-manipulation">
+        <div class="hamburger-lines">
+            <span></span><span></span><span></span>
+        </div>
+    </button>
+
+    <!-- Mobile Nav Overlay -->
+    <div id="mobile-menu" class="mobile-nav-overlay lg:hidden">
+        <nav class="flex flex-col space-y-2 mt-4 flex-1">
+            <a href="index.html" class="mobile-link-item active"><i
+                    class="fa-solid fa-house w-8 text-center mr-2 text-lg"></i> Home</a>
+            <a href="accommodations.html" class="mobile-link-item"><i
+                    class="fa-solid fa-bed w-8 text-center mr-2 text-lg"></i> Lodges & BNBs</a>
+            <a href="camping.html" class="mobile-link-item"><i
+                    class="fa-solid fa-campground w-8 text-center mr-2 text-lg"></i> Camping</a>
+            <a href="car-hire.html" class="mobile-link-item"><i
+                    class="fa-solid fa-car w-8 text-center mr-2 text-lg"></i> Car Hire</a>
+            <a href="tents.html" class="mobile-link-item"><i class="fa-solid fa-tent w-8 text-center mr-2 text-lg"></i>
+                Tents</a>
+            <a href="about.html" class="mobile-link-item"><i class="fa-solid fa-users w-8 text-center mr-2 text-lg"></i>
+                About Us</a>
+        </nav>
+
+        <div class="px-8 mt-auto pb-4 space-y-6">
+            
+
+            <div class="flex gap-4 text-white text-xl">
+                <a href="https://wa.me/254729991926?text=Hello%20Jahari%20Safaris%2C%20I%27d%20like%20to%20book%20a%20safari.%20Please%20share%20availability%20and%20package%20details." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp" class="hover:text-accent"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="#" aria-label="Instagram" class="hover:text-accent"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#" aria-label="Email" class="hover:text-accent"><i class="fa-regular fa-envelope"></i></a>
+            </div>
+
+            <a href="https://wa.me/254729991926?text=Hello%20Jahari%20Safaris%2C%20I%27d%20like%20to%20book%20a%20safari.%20Please%20share%20availability%20and%20package%20details." target="_blank" rel="noopener noreferrer"
+                class="block w-full text-center bg-accent text-white font-bold py-4 rounded-lg text-lg touch-manipulation active:scale-95 transition-transform">Book
+                Now</a>
+        </div>
+    </div>
+
+        <main id="main-content">
+        <section class="relative min-h-[100dvh] flex items-center justify-center overflow-hidden">
+            <div id="hero-bg" class="absolute inset-0 z-0">
+                <img src="assets/images/close-view%20of%20female-lion.jpeg" alt="Close view of female lion" class="w-full h-full object-cover object-center">
+                <div class="absolute inset-0 bg-black/18"></div>
+                <div class="absolute inset-0 bg-gradient-to-b from-black/5 via-black/20 to-black/35"></div>
+                <div class="absolute inset-0 bg-gradient-to-r from-black/10 via-transparent to-black/10"></div>
+            </div>
+
+            <div class="relative z-10 text-center text-white px-4 w-full max-w-5xl mx-auto py-8 md:py-10">
+                <p class="font-accent italic text-2xl md:text-4xl mb-5 text-white fade-up tracking-[0.16em] font-bold drop-shadow-[0_6px_16px_rgba(0,0,0,0.85)]" style="animation-delay: 150ms">
+                    JAHARI SAFARIS WILD ROUTE
+                </p>
+                <h1 id="hero-title" class="font-heading font-black leading-tight mb-5 text-accent fade-up drop-shadow-[0_10px_24px_rgba(0,0,0,0.98)]" style="animation-delay: 260ms; font-size: clamp(3.4rem, 11vw, 7rem); line-height: 1;">
+                    Jahari Safaris
+                </h1>
+                <p class="font-body text-base md:text-xl text-white max-w-2xl mx-auto mb-12 fade-up leading-relaxed font-semibold" style="animation-delay: 380ms">
+                    High-end Maasai Mara safaris, crafted with elegance.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-5 fade-up" style="animation-delay: 500ms">
+                    <a href="#jahari-story" class="btn-primary w-full sm:w-auto text-lg px-10 py-4 shadow-lg shadow-primary/35 uppercase tracking-wider font-semibold">Discover Jahari</a>
+                    <a href="https://wa.me/254729991926?text=Hello%20Jahari%20Safaris%2C%20I%27d%20like%20to%20book%20a%20safari.%20Please%20share%20availability%20and%20package%20details." target="_blank" rel="noopener noreferrer" class="w-full sm:w-auto text-lg px-10 py-4 uppercase tracking-wider font-semibold border border-white/60 text-white hover:bg-white hover:text-dark transition-all duration-300">Plan Your Safari</a>
+                </div>
+            </div>
+
+            <div class="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 fade-up" style="animation-delay: 700ms">
+                <div class="flex flex-col items-center gap-2">
+                    <span class="text-sand text-xs uppercase tracking-widest font-semibold">Scroll</span>
+                    <svg class="w-5 h-5 text-sand animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+                    </svg>
+                </div>
+            </div>
+        </section>
+
+        <section id="jahari-story" class="py-24 bg-light">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+                <div class="lg:col-span-6 fade-up">
+                    <p class="text-xs uppercase tracking-[0.2em] text-primary font-semibold mb-4">The Jahari Signature</p>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6 text-dark">A House of Safari Excellence</h2>
+                    <p class="text-gray-700 leading-relaxed mb-5">Jahari Safaris was built for travelers who appreciate precision, atmosphere, and depth. We do not assemble generic itineraries. We curate elegant, high-touch experiences around your rhythm, your curiosity, and your definition of extraordinary.</p>
+                    <p class="text-gray-700 leading-relaxed mb-8">From the first conversation to your final sunrise in Maasai Mara, our team orchestrates each detail with intention: refined accommodation, discreet logistics, and immersive wildlife moments that feel cinematic yet intimate.</p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100"><span class="text-sm font-semibold text-dark">Bespoke planning, never templates</span></div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100"><span class="text-sm font-semibold text-dark">Private, polished safari flow</span></div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100"><span class="text-sm font-semibold text-dark">Thoughtful conservation ethos</span></div>
+                        <div class="bg-white rounded-xl p-4 shadow-sm border border-gray-100"><span class="text-sm font-semibold text-dark">High-end comfort in the wild</span></div>
+                    </div>
+                </div>
+                <div class="lg:col-span-6 grid grid-cols-2 gap-4 fade-up">
+                    <div class="col-span-2 rounded-2xl overflow-hidden shadow-xl">
+                        <img src="assets/images/inside-bnb.jpeg" alt="Inside Jahari" class="w-full h-72 object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img src="assets/images/walkway.jpeg" alt="Jahari walkway" class="w-full h-56 object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-xl">
+                        <img src="assets/images/Landcruiser-Opensided.jpeg" alt="Jahari safari vehicle" class="w-full h-56 object-cover">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-dark text-white relative overflow-hidden">
+            <div class="absolute inset-0 opacity-15" style="background-image: radial-gradient(circle at 20% 20%, #ffffff 0.5px, transparent 0.5px); background-size: 24px 24px;"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto mb-14 fade-up">
+                    <p class="text-xs uppercase tracking-[0.2em] text-sand mb-4">Our Philosophy</p>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6">Luxury That Feels Natural</h2>
+                    <p class="text-gray-300 text-lg leading-relaxed">At Jahari, luxury is not loud. It is calm confidence, impeccable timing, and meaningful access to the wild. We design journeys that feel effortless while staying deeply connected to place, people, and wildlife.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <article class="fade-up bg-white/5 border border-white/15 rounded-2xl p-8 backdrop-blur-sm">
+                        <h3 class="font-heading text-2xl font-bold mb-3">Curation</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">Every route, every stay, and every experience is selected with intention to match your pace and purpose.</p>
+                    </article>
+                    <article class="fade-up bg-white/5 border border-white/15 rounded-2xl p-8 backdrop-blur-sm">
+                        <h3 class="font-heading text-2xl font-bold mb-3">Elegance</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">Clean design, premium comfort, and attentive service combine to create a seamless safari atmosphere.</p>
+                    </article>
+                    <article class="fade-up bg-white/5 border border-white/15 rounded-2xl p-8 backdrop-blur-sm">
+                        <h3 class="font-heading text-2xl font-bold mb-3">Authenticity</h3>
+                        <p class="text-gray-300 text-sm leading-relaxed">We honor the spirit of Maasai Mara through responsible travel and genuine connection to the landscape.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-white">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14 fade-up">
+                    <p class="text-xs uppercase tracking-[0.2em] text-primary mb-4">Jahari In Motion</p>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Stories in Texture, Light, and Silence</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">A glance into the atmosphere we create: warm interiors, graceful transitions, and the timeless drama of the savannah.</p>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div class="rounded-2xl overflow-hidden shadow-lg fade-up">
+                        <img src="assets/images/rooms.jpeg" alt="Jahari rooms" class="w-full h-80 object-cover">
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-lg fade-up">
+                        <video class="w-full h-80 object-cover" autoplay muted loop playsinline>
+                            <source src="assets/images/fullinside-bnb-tour.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-lg fade-up">
+                        <video class="w-full h-80 object-cover" autoplay muted loop playsinline>
+                            <source src="assets/images/kitchen-area.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="discover-animals" class="py-24 bg-gradient-to-b from-white via-sand/25 to-white relative overflow-hidden">
+            <div class="absolute -top-20 -left-20 w-72 h-72 rounded-full bg-primary/10 blur-3xl"></div>
+            <div class="absolute -bottom-24 -right-24 w-80 h-80 rounded-full bg-accent/10 blur-3xl"></div>
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+                <div class="text-center max-w-4xl mx-auto mb-14 fade-up">
+                    <p class="text-xs uppercase tracking-[0.2em] text-accent mb-4">Discover the Animals</p>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-5 text-dark">Mara Wildlife, Told in Living Frames</h2>
+                    <p class="text-gray-700 text-lg leading-relaxed">Each drive opens like a story: elephants crossing at dawn, zebras moving as one, and lions resting before the hunt begins.</p>
+                </div>
+
+                <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+                    <article class="lg:col-span-7 group rounded-3xl overflow-hidden shadow-xl relative fade-up">
+                        <img src="assets/images/lion-relaxing.jpeg" alt="Lion resting in Maasai Mara" class="w-full h-[440px] md:h-[520px] object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-8 text-white">
+                            <p class="text-xs uppercase tracking-[0.2em] text-orange-200 mb-3">Chapter 01</p>
+                            <h3 class="font-heading text-3xl md:text-4xl font-bold mb-3">The Lion's Calm</h3>
+                            <p class="text-white/90 max-w-xl leading-relaxed">In the stillness of golden grass, the king of the Mara watches without hurry. Power here is quiet, patient, and unforgettable.</p>
+                        </div>
+                    </article>
+
+                    <div class="lg:col-span-5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6">
+                        <article class="group rounded-2xl overflow-hidden shadow-lg bg-white fade-up">
+                            <div class="relative">
+                                <img src="assets/images/elephants.jpeg" alt="Elephants in Maasai Mara" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                <h3 class="absolute bottom-4 left-4 font-heading text-2xl text-white font-bold">Elephant Passage</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed p-5">A gentle procession across the plains, where every step carries memory and meaning.</p>
+                        </article>
+                        <article class="group rounded-2xl overflow-hidden shadow-lg bg-white fade-up">
+                            <div class="relative">
+                                <img src="assets/images/giraffe.jpg" alt="Giraffe in Maasai Mara" class="w-full h-60 object-cover transition-transform duration-700 group-hover:scale-105">
+                                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent"></div>
+                                <h3 class="absolute bottom-4 left-4 font-heading text-2xl text-white font-bold">Skyline Watchers</h3>
+                            </div>
+                            <p class="text-gray-600 text-sm leading-relaxed p-5">Giraffes rise above the acacias, elegant silhouettes against an endless Mara horizon.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
+                    <article class="relative rounded-2xl overflow-hidden shadow-lg fade-up group">
+                        <img src="assets/images/Masai_Mara-zebras.jpg" alt="Zebras in Maasai Mara" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-5 text-white">
+                            <p class="text-xs uppercase tracking-widest text-sand mb-2">Chapter 02</p>
+                            <h3 class="font-heading text-2xl font-bold">Rhythm of Zebras</h3>
+                        </div>
+                    </article>
+                    <article class="relative rounded-2xl overflow-hidden shadow-lg fade-up group">
+                        <img src="assets/images/small-cubs.jpeg" alt="Lion cubs in Maasai Mara" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-5 text-white">
+                            <p class="text-xs uppercase tracking-widest text-sand mb-2">Chapter 03</p>
+                            <h3 class="font-heading text-2xl font-bold">Cubs at Play</h3>
+                        </div>
+                    </article>
+                    <article class="relative rounded-2xl overflow-hidden shadow-lg fade-up group">
+                        <img src="assets/images/young lion.jpeg" alt="Young lion in Maasai Mara" class="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-105">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/75 to-transparent"></div>
+                        <div class="absolute bottom-0 left-0 p-5 text-white">
+                            <p class="text-xs uppercase tracking-widest text-sand mb-2">Chapter 04</p>
+                            <h3 class="font-heading text-2xl font-bold">Future King</h3>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-24 bg-sand/45">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="text-center mb-14 fade-up">
+                    <p class="text-xs uppercase tracking-[0.2em] text-primary mb-4">How We Work</p>
+                    <h2 class="font-heading text-4xl md:text-5xl font-bold mb-4">Designed Around You</h2>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <article class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 fade-up">
+                        <p class="text-xs font-semibold tracking-widest text-primary mb-3">01</p>
+                        <h3 class="font-heading text-2xl font-bold mb-2">Consultation</h3>
+                        <p class="text-gray-600 text-sm">We begin with your travel style, preferences, and timing.</p>
+                    </article>
+                    <article class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 fade-up">
+                        <p class="text-xs font-semibold tracking-widest text-primary mb-3">02</p>
+                        <h3 class="font-heading text-2xl font-bold mb-2">Curation</h3>
+                        <p class="text-gray-600 text-sm">Our team crafts a private Jahari itinerary with elegant precision.</p>
+                    </article>
+                    <article class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 fade-up">
+                        <p class="text-xs font-semibold tracking-widest text-primary mb-3">03</p>
+                        <h3 class="font-heading text-2xl font-bold mb-2">Journey</h3>
+                        <p class="text-gray-600 text-sm">You experience Maasai Mara through refined hospitality and expert guidance.</p>
+                    </article>
+                    <article class="bg-white rounded-xl p-6 shadow-sm border border-gray-100 fade-up">
+                        <p class="text-xs font-semibold tracking-widest text-primary mb-3">04</p>
+                        <h3 class="font-heading text-2xl font-bold mb-2">Memory</h3>
+                        <p class="text-gray-600 text-sm">You return with stories that feel deeply personal and enduring.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="book" class="py-24 bg-dark text-white">
+            <div class="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center fade-up">
+                <p class="text-xs uppercase tracking-[0.2em] text-sand mb-4">Begin Your Chapter</p>
+                <h2 class="font-heading text-4xl md:text-5xl font-bold mb-6">Plan Your Jahari Safari</h2>
+                <p class="text-gray-300 text-lg leading-relaxed mb-10 max-w-3xl mx-auto">Share your preferred dates, pace, and style. We will design a high-end Maasai Mara experience that reflects you with clarity, elegance, and care.</p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/254729991926?text=Hello%20Jahari%20Safaris%2C%20I%27d%20like%20to%20book%20a%20safari.%20Please%20share%20availability%20and%20package%20details." target="_blank" rel="noopener noreferrer" class="btn-primary text-lg px-10 py-4">Chat on WhatsApp</a>
+                    <a href="about.html" class="border border-white/40 px-10 py-4 text-lg font-semibold hover:bg-white hover:text-dark transition-colors">About Jahari</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 mb-12">
+
+                <!-- About -->
+                <div>
+                    <div class="flex items-center gap-4 mb-6">
+                        <div class="h-24 w-24 rounded-full bg-primary/20 flex items-center justify-center border border-primary/40">
+                            <img src="assets/images/logo.png" alt="Jahari Safaris" class="h-20 w-20 rounded-full object-cover">
+                        </div>
+                        <h3 class="font-heading text-2xl font-bold">Jahari Safaris</h3>
+                    </div>
+                    <p class="text-gray-400 mb-6 font-accent italic text-lg">"Where the Wild Calls You Home"</p>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">Experience the ultimate luxury safari in Kenya. Bespoke lodges, premium camping, and 4x4 car hire for unforgettable adventures.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-primary transition-colors"><i class="fa-brands fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="font-heading text-xl mb-6 border-b border-gray-700 pb-2 inline-block">Quick Links</h4>
+                    <ul class="space-y-3 text-gray-400">
+                        <li><a href="accommodations.html" class="hover:text-primary transition-colors">Lodges &amp; BNBs</a></li>
+                        <li><a href="camping.html" class="hover:text-primary transition-colors">Camping Sites</a></li>
+                        <li><a href="car-hire.html" class="hover:text-primary transition-colors">Car Hire</a></li>
+                        <li><a href="tents.html" class="hover:text-primary transition-colors">Tents for Hire</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact -->
+                <div>
+                    <h4 class="font-heading text-xl mb-6 border-b border-gray-700 pb-2 inline-block">Contact Info</h4>
+                    <ul class="space-y-4 text-gray-400">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot mt-1 text-primary"></i>
+                            <span>Maasai MARA, Narok-Kenya</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-phone text-primary"></i>
+                            <span>0729991926</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i class="fa-solid fa-envelope text-primary"></i>
+                            <span>info@jaharisafaris.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Bottom -->
+            <div
+                class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-gray-500 text-sm">
+                <p>&copy; 2026 Jahari Safaris Wild Route. All rights reserved.</p>
+                <div class="flex space-x-4 mt-4 md:mt-0">
+                    <a href="privacy-policy.html" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="terms-of-service.html" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/254729991926?text=Hello%20Jahari%20Safaris%2C%20I%27d%20like%20to%20book%20a%20safari.%20Please%20share%20availability%20and%20package%20details." target="_blank" rel="noopener noreferrer" class="floating-whatsapp" aria-label="Chat on WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/pages/home.js"></script>
+</body>
+
+</html>
+
+
+
